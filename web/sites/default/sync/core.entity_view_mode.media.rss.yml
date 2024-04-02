@@ -1,0 +1,11 @@
+uuid: c2c59994-b49e-4cc1-a9cb-59e1b9250952
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.rss
+label: RSS
+description: ''
+targetEntityType: media
+cache: true

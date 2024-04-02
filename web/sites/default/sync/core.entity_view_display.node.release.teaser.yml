@@ -1,0 +1,42 @@
+uuid: de7c5701-88d0-46d5-b80a-7e33a7280823
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.release.body
+    - field.field.node.release.field_image
+    - field.field.node.release.field_teaser
+    - node.type.release
+  module:
+    - text
+    - user
+id: node.release.teaser
+targetEntityType: node
+bundle: release
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true

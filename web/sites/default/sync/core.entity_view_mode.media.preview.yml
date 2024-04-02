@@ -1,0 +1,11 @@
+uuid: 60305bf8-aa58-4262-bfaf-bf9e80e822b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.preview
+label: preview
+description: ''
+targetEntityType: media
+cache: true

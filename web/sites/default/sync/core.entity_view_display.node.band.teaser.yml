@@ -1,0 +1,38 @@
+uuid: dd3686fd-c7d8-4483-a26f-141cf2d54b83
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.band.body
+    - field.field.node.band.field_image
+    - field.field.node.band.field_releases
+    - field.field.node.band.field_teaser
+    - field.field.node.band.field_videos
+    - node.type.band
+  module:
+    - user
+id: node.band.teaser
+targetEntityType: node
+bundle: band
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_releases: true
+  field_teaser: true
+  field_videos: true

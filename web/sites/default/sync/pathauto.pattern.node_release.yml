@@ -1,0 +1,22 @@
+uuid: b19bc3f4-22ce-4d4b-b4cb-1d964f53d1b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_release
+label: 'Content - Release'
+type: 'canonical_entities:node'
+pattern: 'releases/[node:title]'
+selection_criteria:
+  58c0441c-e185-4807-b7f1-c5fd1c08b7ca:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 58c0441c-e185-4807-b7f1-c5fd1c08b7ca
+    context_mapping:
+      node: node
+    bundles:
+      release: release
+selection_logic: and
+weight: 0
+relationships: {  }

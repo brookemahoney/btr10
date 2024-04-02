@@ -1,0 +1,23 @@
+uuid: 1fd58b2e-a021-4f31-8e07-38616e543e04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.band
+  module:
+    - text
+id: node.band.body
+field_name: body
+entity_type: node
+bundle: band
+label: Body
+description: "Snippets:<br>\r\n&lt;div style=\"display:inline-block\"&gt;Inline Block&lt;/div&gt;"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

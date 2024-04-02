@@ -1,0 +1,16 @@
+uuid: b74913dc-564a-48ce-a39f-fbb9f8ef0936
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'delete own files'

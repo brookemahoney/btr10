@@ -1,0 +1,13 @@
+uuid: d0e50d18-4434-4ce7-98f2-0f7af857f60b
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: DyypzTfThX10FFQw-399qPfEbLLyrhXgQrKPVsmAoJ4
+id: user_block_user_action
+label: 'Block current user'
+type: user
+plugin: user_block_user_action
+configuration: {  }

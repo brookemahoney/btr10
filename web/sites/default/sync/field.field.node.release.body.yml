@@ -1,0 +1,23 @@
+uuid: 410b94e2-5bca-47d1-aefd-3e2b372fc547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.release
+  module:
+    - text
+id: node.release.body
+field_name: body
+entity_type: node
+bundle: release
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

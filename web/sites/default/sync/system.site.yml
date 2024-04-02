@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: f6b512ae-39ad-44fa-9994-8ba800f168c7
+name: 'Burning Token Records'
+mail: brooke@brookemahoney.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /bands
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

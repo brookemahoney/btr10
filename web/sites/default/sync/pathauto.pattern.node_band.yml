@@ -1,0 +1,22 @@
+uuid: f48259df-67f7-4f82-bcc4-4f45f25b2559
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_band
+label: 'Content - Band'
+type: 'canonical_entities:node'
+pattern: 'bands/[node:title]'
+selection_criteria:
+  b30a0dc2-292c-4a63-a01b-f225cb53b2c4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b30a0dc2-292c-4a63-a01b-f225cb53b2c4
+    context_mapping:
+      node: node
+    bundles:
+      band: band
+selection_logic: and
+weight: 0
+relationships: {  }

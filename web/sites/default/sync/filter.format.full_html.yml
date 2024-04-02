@@ -1,0 +1,40 @@
+uuid: c5ed596d-6eeb-4a0f-aa56-1db1748417fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+  module:
+    - media
+_core:
+  default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
+name: 'Full HTML'
+format: full_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 2
+    settings:
+      default_view_mode: default
+      allowed_view_modes:
+        full: full
+      allowed_media_types:
+        image: image
